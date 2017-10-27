@@ -31,8 +31,8 @@ export class TodoService {
   }
 
   public getTodos(): Todo[] {
-    let todos = JSON.parse(localStorage.getItem('todos'));
-    return todos == null ? [] : todos.todos;
+    let localStorageItem = JSON.parse(localStorage.getItem('todos'));
+    return localStorageItem == null ? [] : localStorageItem.todos;
   }
 
   public removeTodo(id: number): void {
