@@ -3,8 +3,6 @@ import { Todo } from '../classes/todo';
 
 @Injectable()
 export class TodoService {
-
-  private todos: Todo[];
   private nextId: number;
 
   constructor() {
